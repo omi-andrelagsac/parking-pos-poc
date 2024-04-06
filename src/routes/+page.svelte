@@ -4,6 +4,7 @@
     import { goto } from "$app/navigation";
     import { createUser } from "$lib/url";
     import { updateUser } from "$lib/url";
+    // import { checkForUpdate } from "$lib/updater";
 
     /**
      * @type {any[]}
@@ -11,18 +12,23 @@
     let result = [];
     
     const loadUsers = async () => {
-        const db = await Database.load("sqlite:/Users/andrelagsac/Downloads/parking_pos_poc.sqlite")
+        const db = await Database.load("sqlite:/Users/andrelagsac/Downloads/parking_pos_poc.sqlite");
         result = await db.select("SELECT * FROM users");
         console.log(result)
     }
 
     const deleteUser = async (/** @type {any} */ userId) => {
-        const db = await Database.load("sqlite:/Users/andrelagsac/Downloads/parking_pos_poc.sqlite")
-        await db.execute(`DELETE FROM USERS WHERE id = ${userId}`)
+        const db2 = await Database.load("sqlite:/Users/andrelagsac/Downloads/parking_pos_poc.sqlite");
+        await db2.execute(`DELETE FROM USERS WHERE id = ${userId}`)
         await loadUsers();
     }
 
-    onMount(loadUsers);
+    const load = async () => {
+        // await checkForUpdate();
+        await loadUsers();
+    }
+
+    onMount(load);
 </script>
 
 <div class="flex justify-between p-3">
