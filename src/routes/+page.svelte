@@ -4,7 +4,6 @@
     import { goto } from "$app/navigation";
     import { createUser } from "$lib/url";
     import { updateUser } from "$lib/url";
-    // import { checkForUpdate } from "$lib/updater";
 
     /**
      * @type {any[]}
@@ -24,7 +23,6 @@
     }
 
     const load = async () => {
-        // await checkForUpdate();
         await loadUsers();
     }
 
