@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "parking-pos-poc",
-    "version": "0.1.4"
+    "version": "0.1.5"
   },
   "tauri": {
     "allowlist": {
@@ -60,7 +60,7 @@
         "https://localhost:443/pos-releases/{{target}}/{{arch}}/{{current_version}}"
       ],
       "dialog": true,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNGNzIxQjg1NkQ2MDBBQQpSV1NxQU5aV3VDSDNBNGJzMXZFL0dudGRKb1Y4V2t1cGxiRzJVSUxyYkRYUVRjZUYxVEE4SnB4Ywo="
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk4MUU5NEFFNjk0NEZCRjcKUldUMyswUnBycFFlbUcyeUQzSUU1TGdXN3gvN2d2cXFmV0swLzJRd2ZTcXM1NW1GTktUdXd2RlMK"
     },
     "windows": [
       {
