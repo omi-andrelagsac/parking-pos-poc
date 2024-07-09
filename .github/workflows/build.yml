@@ -58,4 +58,4 @@ jobs:
           releaseDraft: true
           prerelease: false
           bundleIdentifier: 'poc.parkmate.test'  # The bundle identifier to inject
-          appName: 'POC STG'  # The app name to inject
+          appName: 'POC UAT'  # The app name to inject
