@@ -57,3 +57,5 @@ jobs:
           releaseBody: 'See the assets to download and install this version.'
           releaseDraft: true
           prerelease: false
+          bundleIdentifier: 'poc.parkmate.test'  # The bundle identifier to inject
+          appName: 'POC STG'  # The app name to inject
